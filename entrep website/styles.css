@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14182C;
+    color: white;
+}
+
+.head-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container{
+    width: 50%;
+}
+
+nav{
+    width: 50%;
+}
+.nav-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links a:first-child{
+    color: #69fab4;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links A:hover{
+    color: #69fab4;
+}
+
+.nav-btn-container{
+    display: none;
+}
+
+#sec1{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-page{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-page-1{
+    width: 50%;
+}
+
+.first-page-1 h1{
+    font-size: 4rem;
+}
+
+.first-page-1 h1 span{
+    line-height: 0px;
+    background-color: aqua;
+}
+
+.first-page-1 h1 span::after{
+    position: absolute;
+    border: 30px solid #69fab4;
+}
+
+.first-page-2{
+    width: 50%;
+    background-color: blue;
+    background-image: url("first-pageBg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 90%;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .head-container{
+        width: 90%;
+    }
+    .logo-container{
+        width: 90%;
+    }
+   .nav-btn-container{
+    display: block;
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+   }
+   #closeBtn{
+    display: none;
+   }
+   nav{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #14182C;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+   }
+   .nav-links{
+    margin-top: 15vh;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+   }
+   nav a{
+    color: white;
+    font-size: 20px;
+   }
+   .nav-btn-container i{
+    font-size: 22px;
+    cursor: pointer;
+   }
+   .nav-btn-container i:hover{
+    color: #69fab4;
+   }
+
+  }
+  
